@@ -102,3 +102,11 @@ figure{
     width: 100%;
     height: 140px;
 }
+
+figure:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.imagens-galeria:hover{
+    filter:invert(80%) sepia(70);
+}

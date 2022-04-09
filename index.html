@@ -9,6 +9,12 @@
 
     <!-- Importação da font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Importação do fancybox -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  />
 </head>
 <body>
     <!-- Container = div principal do site -->
@@ -53,42 +59,42 @@
             <h3>Inserindo galerias de imagens</h3>
             <div class="imagens-galeria">
                 <figure>
-                    <img class="imagens-galeria" src="img/1.jpg" alt="">
+                    <img data-fancybox="gallery" data-caption="HTML 5 Conheça a evolução" class="imagens-galeria" src="img/1.jpg" alt="">
                     <figcaption>Código HTML</figcaption>
                 </figure>
                     
                 <figure>
-                    <img class="imagens-galeria" src="img/2.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
                     <figapton>Código HTML</figcapton>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/3.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
                     <figcaption>Visual Studio odec</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/4.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
                     <figcaption>Codificando</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/5.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
                     <figcaption>Office</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/6.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
                     <figcaption>office</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/7.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
                     <figcaption>Cyber café</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/8.png" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
                     <figcaption>Codificando</figcaption>
                 </figure>
         </div>
@@ -100,6 +106,10 @@
         <div id="mapas">
             <h3>Inserindo mapas</h3>
         </div>
-    </div> <!--Final do container-->
+    </div> 
+    <!--Final do container-->
+    <!-- Scripts irão ficar abaixo --> 
+    <!-- Importação do JS doFancybox-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
