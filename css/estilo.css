@@ -59,7 +59,8 @@ nav ul li a:hover{
 #videos{
     float: left;
     width: 100%;
-    height: 500px;
+    height: auto;
+    padding: 10px;
 }
 
 #mapas{
@@ -109,4 +110,10 @@ figure:hover{
 }
 .imagens-galeria:hover{
     filter:invert(80%) sepia(70);
+}
+.tamanho-video{
+    width: 50%;
+    float: left;
+    height: 360px;
+    padding: 10px;
 }
