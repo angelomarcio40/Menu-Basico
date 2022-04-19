@@ -23,11 +23,15 @@
         <nav>
             <main>
                 <ul>
-                    <li><a href="">LOGOTIPO</a></li>
+                    <li class="alinha-esquerda"><a href="">LOGOTIPO</a></li>
+                    <li id="icone-responsivo"><i class="fa-solid fa-bars fa-2x" onclick="exibeMenu()"></i></li>
+                    <div id="exibe-menu">
                     <li><a href="#icones"><i class="fa-solid fa-globe"></i>Icones</a></li>
                     <li><a href="#imagens"><i class="fa-solid fa-image"></i> Imagens</a></li>
                     <li><a href="#videos"><i class="fa-solid fa-film"></i>Videos</a></li>
                     <li><a href="#mapas"><i class="fa-regular fa-map"></i>Mapas</a></li>
+                    
+                    </div>
                 </ul>
         </nav>
 
@@ -85,7 +89,7 @@
 
                     <figure>
                         <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
-                        <figcaption>Visual Studio odec</figcaption>
+                        <figcaption>Visual Studio Codec</figcaption>
                     </figure>
 
                     <figure>
@@ -142,11 +146,17 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9124.013979772308!2d-46.80334883855053!3d-21.967046264631787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb63bdb13581%3A0x8b769aa2064c309a!2sSenac%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista!5e0!3m2!1spt-BR!2sbr!4v1649804583652!5m2!1spt-BR!2sbr"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+
                     </main>
+                    <div id="topo">
+                        <a href="">
+                            <i class="fa-solid fa-circle-arrow-up fa-3x" ></i>
+                        </a>
+                    </div>
 
                     <!-- Rodapé da página -->
                     <footer>
-                        <p>&copy;Desenvolvido por: <span class="negrito">Angelo Marcio Pereiram de Jesus</span></p>
+                        <p>&copy;Desenvolvido por: <span class="negrito">Angelo Marcio Pereira de Jesus</span></p>
                         <small>2022</small>
                     </footer>
 
@@ -155,6 +165,19 @@
                 <!-- Scripts irão ficar abaixo -->
                 <!-- Importação do JS doFancybox-->
                 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+                <!-- Importação do jquery -->
+                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+                <!-- eEcript especificos da página -->
+                <!-- Linguagem JS = JavaScript -->
+                <script>
+                    // Cria a função exibeMenu
+                    function exibeMenu(){
+                        // Exibe/oculta omenu mobile(hamburguer)
+                        $('#exibe-menu').toggle()
+                    }
+                </script>
 </body>
 
 </html>

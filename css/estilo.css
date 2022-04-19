@@ -8,7 +8,7 @@ body{
 }
 
 nav{
-    background-color: #7d6f15;
+    background-color: #aea9a9;
     width: 100%;
     float: left;
     box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
@@ -41,6 +41,11 @@ nav ul li a{
 nav ul li a:hover{
     background-color: #FFF;
     color: blueviolet;
+}
+
+#icone-responsivo{
+    float: right;
+    display: none;
 }
 
 #icones{
@@ -156,6 +161,21 @@ html{
     scroll-margin-top: 45px;
 }
 
+/* CSS seta voltar ao topo */
+#topo{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+}
+#topo a{
+    color: #060606;
+}
+
+#topo:hover{
+    transform: scale(1.05);
+}
+
 /* Versão final Desktop */
 
 /* Inicio da versão mobile */
@@ -191,6 +211,20 @@ html{
 
     .mapas{
         width: 100%;
+    }
+
+    #icone-responsivo{
+        display: block;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #exibe-Menu{
+        display: none;
+    }
+    .alinha-esquerda{
+        float: left;
     }
 }
   
